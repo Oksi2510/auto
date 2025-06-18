@@ -1,24 +1,49 @@
 @use "reset";
 @use "fonts";
-@use "variables";
+@use "variables" as *;
+
+// ====================ALL=============================
 
 body {
+  color: #1E1B1B;
   font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
 }
+
 .container {
-  width: 1280px;
+  max-width: 1280px;
+  padding: 0 15px;
   margin: 0 auto;
+  height: 100%;
 }
+
+
+.button {
+  background: #FF6433;
+  border-radius: 12px;
+  padding: 16px 40px;
+  display: inline-block;
+  @include transition;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+// ====================HEADER=============================
 
 .header__top-inner {
   width: 100%;
   display: flex;
-  margin-top: 18px;
+  padding: 18px 0;
   align-items: center;
 }
 
 .header {
-
+  position: relative;
+  padding-bottom: 135px;
 
   &__logo {
     margin-right: auto;
@@ -35,6 +60,8 @@ body {
       &:last-child {
         margin-right: 0;
       }
+
+
     }
 
     a {
@@ -44,6 +71,11 @@ body {
       font-style: normal;
       font-weight: 600;
       line-height: 28px;
+      @include transition;
+
+      &:hover {
+        color: #FF6433;
+      }
     }
   }
 
@@ -54,38 +86,170 @@ body {
     width: 1px;
     background-color: #9391915C;
   }
-}
+
+  &__contact {
+    margin-left: 44px;
+    position: relative;
+
+    &-name {
+      color: #1E1B1B;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px;
+      opacity: 0.7;
+    }
+
+    &-tel {
+      color: #1E1B1B;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 175%;
+      @include transition;
+
+      &:hover {
+        color: #FF6433;
+      }
+    }
 
 
 
-.header__contact {
-  margin-left: 44px;
-  position: relative;
-
-  &-name {
-    color: #1E1B1B;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    opacity: 0.7;
+    &::after {
+      content: "";
+      position: absolute;
+      height: 40px;
+      width: 40px;
+      top: 7px;
+      left: -54px;
+      background: url("../images/icon/green\ phone.svg") no-repeat;
+    }
   }
 
-  &-tel {
-    color: #1E1B1B;
+
+  &__body {
+    margin: 80px 0 135px;
+
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__content {
+    width: 625px;
+
+  }
+
+  &__titel {
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 84px;
+    letter-spacing: -1.92px;
+    margin-bottom: 40px;
+    width: 625px;
+  }
+
+  &__btn-box {
+    margin-bottom: 48px;
+  }
+
+  &__btn {
+    color: #FFF;
     font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
     line-height: 175%;
+    margin-right: 33px;
+
+    &--transp {
+      color: #1E1B1B;
+      font-weight: 500;
+      font-size: 16px;
+      padding: 24px 16px 24px 48px;
+      border-radius: 12px;
+      position: relative;
+      @include transition;
+      display: inline-block;
+
+      &::after {
+        content: "";
+        height: 24px;
+        width: 24px;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 16px;
+        position: absolute;
+        background: url("../images/icon/Play\ black.svg");
+      }
+
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px 1px #FF6433;
+      }
+    }
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    top: 7px;
-    left: -54px;
-    background: url("../images/icon/green\ phone.svg") no-repeat;
+  &__status {
+    margin-left: 45px;
+    position: relative;
+
+    &::after {
+      content: "";
+      height: 31px;
+      width: 31px;
+      top: 12px;
+      left: -44px;
+      position: absolute;
+      background: url("../images/icon/clock.svg");
+    }
+
+    &-open {
+      color: #939191;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+    }
+
+    &-work {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 175%;
+    }
   }
+
+
+  &__img-box {
+    position: relative;
+  }
+
+  &__info-box {
+    position: absolute;
+    top: 81px;
+    left: -30px;
+    display: flex;
+    height: 102px;
+    width: 282px;
+    border-radius: 59px;
+    background: #FFF;
+    box-shadow: 0px 0px 0px 12px #e1e1e143;
+
+    & span {
+      margin-left: 98px;
+      align-self: center;
+      position: relative;
+
+      &::after {
+        content: "";
+        top: 0;
+        left: -85px;
+        position: absolute;
+        height: 70px;
+        width: 71px;
+        transform: translateY(calc(-50% + 12px));
+        display: block;
+        background: url("../images/icon/quick.svg") no-repeat;
+      }
+    }
+  }
+
 }
