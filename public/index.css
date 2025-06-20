@@ -137,7 +137,6 @@ body {
 
 .header {
   position: relative;
-  padding-bottom: 135px;
 }
 .header__logo {
   margin-right: auto;
@@ -336,6 +335,86 @@ body {
   font-weight: 500;
   line-height: 24px;
   opacity: 0.7;
+}
+
+.main__offer {
+  background-color: #F2F2F2;
+  padding: 128px 0;
+}
+
+.offer__inner {
+  display: flex;
+  flex-direction: column;
+}
+.offer__heading {
+  display: flex;
+  flex-direction: column;
+  width: 855px;
+  margin: 0 auto 48px;
+}
+
+.heading--center {
+  align-items: center;
+}
+.heading__uptitle {
+  line-height: 36px;
+  letter-spacing: -0.72px;
+}
+.heading__title {
+  font-size: 58px;
+  font-weight: 800;
+  line-height: 76px;
+  letter-spacing: -1.74px;
+  text-align: center;
+}
+
+.offer__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 232px);
+  gap: 8px;
+  margin-bottom: 32px;
+}
+.offer__grid-item {
+  background-color: #FFF;
+}
+.offer__grid-link {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+.offer__grid-link svg {
+  margin-bottom: 15px;
+}
+.offer__grid-link:hover {
+  background-color: #FF6433;
+}
+.offer__grid-link:hover svg path {
+  fill: #FFF;
+}
+.offer__grid-link:hover span {
+  color: #FFF;
+}
+
+.offer__link-about {
+  display: block;
+  align-self: flex-end;
+  position: relative;
+  transition: all 0.3s;
+}
+.offer__link-about svg {
+  margin-left: 16px;
+}
+.offer__link-about:hover {
+  color: #FF6433;
+}
+.offer__link-about:hover svg path {
+  fill: #FF6433;
+  transition: all 0.3s;
 }
 
 /*# sourceMappingURL=index.css.map */

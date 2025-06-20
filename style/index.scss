@@ -43,7 +43,7 @@ body {
 
 .header {
   position: relative;
-  padding-bottom: 135px;
+
 
   &__logo {
     margin-right: auto;
@@ -263,11 +263,6 @@ body {
     background: #FFF;
     box-shadow: 0px 0px 0px 12px #e1e1e143;
     align-items: center;
-
-
-
-
-
   }
 
   &__rate-item {
@@ -290,5 +285,110 @@ body {
     font-weight: 500;
     line-height: 24px;
     opacity: 0.7;
+  }
+}
+
+// ====================OFFER=============================
+.main__offer {
+  background-color: #F2F2F2;
+  padding: 128px 0;
+}
+
+.offer {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    width: 855px;
+    margin: 0 auto 48px;
+  }
+}
+
+.heading {
+  &--center {
+    align-items: center;
+  }
+
+  &__uptitle {
+    line-height: 36px;
+    letter-spacing: -0.72px;
+  }
+
+  &__title {
+    font-size: 58px;
+    font-weight: 800;
+    line-height: 76px;
+    letter-spacing: -1.74px;
+    text-align: center;
+  }
+}
+
+
+
+.offer__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 232px);
+  gap: 8px;
+  margin-bottom: 32px;
+
+
+  &-item {
+    background-color: #FFF;
+  }
+
+  &-link {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s;
+
+    & span {}
+
+    & svg {
+      margin-bottom: 15px;
+    }
+
+    &:hover {
+
+      & {
+        background-color: #FF6433;
+      }
+
+      & svg path {
+        fill: #FFF;
+      }
+
+      & span {
+        color: #FFF;
+      }
+    }
+  }
+}
+
+.offer__link-about {
+  display: block;
+  align-self: flex-end;
+  position: relative;
+  transition: all .3s;
+
+  & svg {
+    margin-left: 16px;
+  }
+
+  &:hover {
+    color: #FF6433;
+  }
+
+  &:hover svg path {
+    fill: #FF6433;
+      transition: all .3s;
   }
 }
