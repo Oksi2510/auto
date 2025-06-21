@@ -501,4 +501,54 @@ body {
   width: 440px;
 }
 
+.main__contact-promo {
+  background: url("../images/photo/car_1.png") no-repeat top left, url("../images/photo/car_2.png") repeat-x top right, #F2F2F2;
+  background-size: auto 502px, auto 502px;
+  position: relative;
+}
+
+.contact-promo__inner {
+  background-color: #FF6433;
+  width: 730px;
+  height: 502px;
+  padding: 128px 0;
+}
+.contact-promo__heading {
+  color: #FFF;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: -1.44px;
+  width: 570px;
+  margin: 0 80px;
+}
+.contact-promo__btn {
+  background-color: #000000;
+  margin: 48px 0 0 60px;
+}
+.contact-promo__row {
+  display: flex;
+  padding: 48px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.contact-promo__row-item {
+  display: flex;
+  flex-direction: column;
+  line-height: 36px;
+  letter-spacing: -0.72px;
+  opacity: 0.7;
+}
+.contact-promo__row-item span {
+  color: #661CE7;
+  font-size: 58px;
+  font-weight: 800;
+  line-height: 76px;
+  letter-spacing: -1.74px;
+}
+
+.heading__title-content {
+  margin: auto 0;
+}
+
 /*# sourceMappingURL=index.css.map */

@@ -404,9 +404,10 @@ body {
 
   &__inner {
     display: flex;
-&-info{
-  margin-right: 130px;
-}
+
+    &-info {
+      margin-right: 130px;
+    }
 
     &-steps {
       display: flex;
@@ -414,7 +415,6 @@ body {
 
     }
   }
-
 
   &__steps-item {
     display: flex;
@@ -448,7 +448,7 @@ body {
       transform: translateY(50%);
     }
 
-    & span{
+    & span {
       display: block;
       position: absolute;
       bottom: -83px;
@@ -457,9 +457,7 @@ body {
       width: 0;
       border-left: 3px dashed #FF6433;
     }
-
   }
-
 
   &__steps-name {
     font-size: 32px;
@@ -477,8 +475,6 @@ body {
   }
 }
 
-
-
 .heading__title {
   max-width: 525px;
   margin-bottom: 16px;
@@ -491,4 +487,74 @@ body {
   opacity: 0.6;
   margin-bottom: 32px;
   width: 440px;
+}
+
+// ====================CONTACT-PROMO=============================
+.main__contact-promo {
+  background: url("../images/photo/car_1.png") no-repeat top left, url("../images/photo/car_2.png") repeat-x top right, #F2F2F2;
+  background-size: auto 502px, auto 502px;
+  position: relative;
+
+  // &::after {
+  //   content: "";
+  //   background-image: url("../images/photo/car_1.png");
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+
+  // }
+}
+
+.contact-promo {
+
+
+  &__inner {
+    background-color: #FF6433;
+    width: 730px;
+    height: 502px;
+    padding: 128px 0;
+  }
+
+  &__heading {
+
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: -1.44px;
+    width: 570px;
+    margin: 0 80px;
+  }
+
+  &__btn {
+    background-color: #000000;
+    margin: 48px 0 0 60px;
+  }
+
+  &__row {
+    display: flex;
+    padding: 48px 0;
+    display: flex;
+    justify-content: space-between;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      line-height: 36px;
+      letter-spacing: -0.72px;
+      opacity: 0.7;
+
+      & span {
+        color: #661CE7;
+        font-size: 58px;
+        font-weight: 800;
+        line-height: 76px;
+        letter-spacing: -1.74px;
+      }
+    }
+  }
+}
+
+.heading__title-content {
+  margin: auto 0;
 }
