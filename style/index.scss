@@ -494,15 +494,6 @@ body {
   background: url("../images/photo/car_1.png") no-repeat top left, url("../images/photo/car_2.png") repeat-x top right, #F2F2F2;
   background-size: auto 502px, auto 502px;
   position: relative;
-
-  // &::after {
-  //   content: "";
-  //   background-image: url("../images/photo/car_1.png");
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-
-  // }
 }
 
 .contact-promo {
@@ -557,4 +548,46 @@ body {
 
 .heading__title-content {
   margin: auto 0;
+}
+
+// ====================CONTACT-PROMO=============================
+.main__brands {
+  padding: 128px 0 90px 0;
+  background-color: #E2E6E9;
+}
+
+.brands {
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 127px);
+    gap: 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__list-item {}
+
+  &__list-link {
+    display: block;
+    height: 100%;
+    width: 100%;
+
+
+    & svg path {
+      @include transition;
+    }
+
+    &:hover svg path {
+      fill: #FF6433;
+
+    }
+  }
+}
+
+.heading__title {
+  margin: 0 auto 31px auto;
+  text-align: center;
+
 }

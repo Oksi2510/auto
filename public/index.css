@@ -551,4 +551,34 @@ body {
   margin: auto 0;
 }
 
+.main__brands {
+  padding: 128px 0 90px 0;
+  background-color: #E2E6E9;
+}
+
+.brands__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 127px);
+  gap: 1fr;
+  align-items: center;
+  justify-content: center;
+}
+.brands__list-link {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.brands__list-link svg path {
+  transition: all 0.3s;
+}
+.brands__list-link:hover svg path {
+  fill: #FF6433;
+}
+
+.heading__title {
+  margin: 0 auto 31px auto;
+  text-align: center;
+}
+
 /*# sourceMappingURL=index.css.map */
