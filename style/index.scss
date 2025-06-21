@@ -404,8 +404,9 @@ body {
 
   &__inner {
     display: flex;
-
-    &-info {}
+&-info{
+  margin-right: 130px;
+}
 
     &-steps {
       display: flex;
@@ -414,11 +415,6 @@ body {
     }
   }
 
-  &__heading {}
-
-  &__btn {}
-
-  &__heading {}
 
   &__steps-item {
     display: flex;
@@ -464,7 +460,6 @@ body {
 
   }
 
-  &__steps-info {}
 
   &__steps-name {
     font-size: 32px;
@@ -495,4 +490,5 @@ body {
   line-height: 28px;
   opacity: 0.6;
   margin-bottom: 32px;
+  width: 440px;
 }

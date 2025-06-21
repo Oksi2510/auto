@@ -427,6 +427,9 @@ body {
 .follow__inner {
   display: flex;
 }
+.follow__inner-info {
+  margin-right: 130px;
+}
 .follow__inner-steps {
   display: flex;
   flex-direction: column;
@@ -495,6 +498,7 @@ body {
   line-height: 28px;
   opacity: 0.6;
   margin-bottom: 32px;
+  width: 440px;
 }
 
 /*# sourceMappingURL=index.css.map */
