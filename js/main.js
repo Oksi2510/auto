@@ -15,4 +15,13 @@ $(function () {
       </svg>
     `
   });
+
+  $('.review__card-slider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: true,
+    infinite: true,
+
+  });
 });

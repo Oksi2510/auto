@@ -115,6 +115,7 @@ body {
   padding: 0 15px;
   margin: 0 auto;
   height: 100%;
+  overflow: hidden;
 }
 
 .button {
@@ -132,6 +133,12 @@ body {
 }
 
 .title--center {
+  text-align: center;
+}
+
+.heading--center {
+  align-items: center;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -357,9 +364,6 @@ body {
   margin: 0 auto 48px;
 }
 
-.heading--center {
-  align-items: center;
-}
 .heading__uptitle {
   line-height: 36px;
   letter-spacing: -0.72px;
@@ -645,6 +649,56 @@ body {
 
 .blog__title {
   margin-bottom: 47px;
+}
+
+.review__heading {
+  max-width: 910px;
+  margin-bottom: 76px;
+}
+.review__card {
+  height: 376px;
+  width: 616px;
+  background-color: #fff;
+  padding: 72px;
+  border-radius: 6px;
+  border: 1px solid rgba(172, 172, 172, 0.2901960784);
+  margin: 0 24px;
+}
+.review__card-slider .slick-track {
+  display: flex;
+}
+.review__card-user {
+  display: flex;
+  margin-bottom: 24px;
+}
+.review__card-text {
+  min-width: 472px;
+  line-height: 36px;
+  letter-spacing: -0.72px;
+}
+.review__avatar {
+  margin-right: 16px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.review__user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.review__user-name {
+  line-height: 36px;
+  letter-spacing: -0.72px;
+}
+.review__user-location {
+  color: #939191;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.main__review {
+  padding: 128px 0 160px 0;
+  background-color: #F2F2F2;
 }
 
 /*# sourceMappingURL=index.css.map */

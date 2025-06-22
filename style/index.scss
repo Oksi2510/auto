@@ -17,6 +17,7 @@ body {
   padding: 0 15px;
   margin: 0 auto;
   height: 100%;
+  overflow: hidden;
 }
 
 
@@ -36,6 +37,12 @@ body {
 }
 
 .title--center {
+  text-align: center;
+}
+
+.heading--center {
+  align-items: center;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -314,9 +321,7 @@ body {
 }
 
 .heading {
-  &--center {
-    align-items: center;
-  }
+
 
   &__uptitle {
     line-height: 36px;
@@ -625,6 +630,7 @@ body {
     grid-template-rows: repeat(2, 606px);
     row-gap: 64px;
     column-gap: 32px;
+
     &-link {
       display: block;
       height: 100%;
@@ -667,4 +673,74 @@ body {
 
 .blog__title {
   margin-bottom: 47px;
+}
+
+// ====================REVIEW=============================
+.review {
+
+  &__inner {}
+
+  &__heading {
+    max-width: 910px;
+    margin-bottom: 76px;
+  }
+
+
+
+  &__card {
+    height: 376px;
+    width: 616px;
+    background-color: #fff;
+    padding: 72px;
+    border-radius: 6px;
+    border: 1px solid #acacac4a;
+    // box-shadow: 11px 130px 100px 30px #00000005;
+    margin:0 24px ;
+  }
+
+  &__card-slider {
+    .slick-track {
+      display: flex;
+
+    }
+  }
+
+  &__card-user {
+    display: flex;
+    margin-bottom: 24px;
+  }
+
+  &__card-text {
+    min-width: 472px;
+    line-height: 36px;
+    letter-spacing: -0.72px;
+  }
+
+  &__avatar {
+    margin-right: 16px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &__user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  &__user-name {
+    line-height: 36px;
+    letter-spacing: -0.72px;
+  }
+
+  &__user-location {
+    color: #939191;
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+.main__review {
+  padding: 128px 0 160px 0;
+  background-color: #F2F2F2;
 }
