@@ -1,4 +1,7 @@
 $(function () {
+  Fancybox.bind("[data-fancybox]", {
+  });
+
   $("#demo").rateYo({
     rating: 4.5,
     starWidth: "32px",
