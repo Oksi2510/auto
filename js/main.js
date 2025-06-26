@@ -19,9 +19,24 @@ $(function () {
   $('.review__card-slider').slick({
     slidesToShow: 2,
     slidesToScroll: 1,
-    arrows: true,
+    arrows: false,
     dots: true,
     infinite: true,
+    appendDots: $(".review__dots-wrapper"),
+    dotsClass: "review__card-dots",
+    customPaging: function (slider, i) {
+      return '<button type="button"></button>'; // ← без текста, без цифр
+    },
+
+  });
+  $(".review__card-prev").on("click", function (e) {
+    e.preventDefault();
+    $(".review__card-slider").slick("slickPrev");
+  });
+
+  $(".review__card-next").on("click", function (e) {
+    e.preventDefault();
+    $(".review__card-slider").slick("slickNext");
 
   });
 });

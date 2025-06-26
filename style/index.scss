@@ -13,11 +13,11 @@ body {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1310px;
   padding: 0 15px;
   margin: 0 auto;
   height: 100%;
-  overflow: hidden;
+
 }
 
 
@@ -631,6 +631,7 @@ body {
     row-gap: 64px;
     column-gap: 32px;
 
+
     &-link {
       display: block;
       height: 100%;
@@ -638,7 +639,7 @@ body {
       @include transition;
 
       &:hover {
-        box-shadow: 0px 20px 20px 0px #dbdbdb;
+        box-shadow: 20px 20px 20px 0px #dbdbdb;
         transform: scale(1.03);
       }
     }
@@ -695,13 +696,17 @@ body {
     border-radius: 6px;
     border: 1px solid #acacac4a;
     // box-shadow: 11px 130px 100px 30px #00000005;
-    margin:0 24px ;
+    margin-right: 24px;
+    width: 616px;
   }
 
   &__card-slider {
+    overflow: hidden;
+    width: 1304px;
+    padding-right: -24px;
+
     .slick-track {
       display: flex;
-
     }
   }
 
@@ -738,9 +743,122 @@ body {
     font-size: 16px;
     line-height: 28px;
   }
+
+  &__nav-box {
+    align-items: center;
+    position: relative;
+  }
+
+  &__card-arrows {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
+  &__card-arrow {
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__card-dots {
+    text-align: center;
+    margin-top: 32px;
+
+
+
+    & li {
+      display: inline-block;
+      margin: 0 7.5px;
+
+      & button {
+        padding: 30px 0;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        position: relative;
+
+
+        &::before {
+          content: "";
+          display: block;
+          width: 30px;
+          height: 3px;
+          background-color: #808080;
+          border-radius: 3px;
+          margin: auto;
+        }
+      }
+
+    }
+
+    & .slick-active {
+      & button::before {
+        background-color: #FF6433;
+      }
+    }
+  }
+
+
+
+  &__card-prev {
+    position: relative;
+    margin-right: 39px;
+    width: 48px;
+    height: 48px;
+    background: #fff;
+    border-radius: 50%;
+    @include transition;
+
+
+    & svg {
+      display: block;
+      display: block;
+      margin: auto;
+
+    }
+
+    &:hover svg path {
+      fill: #fff;
+      @include transition;
+    }
+
+    &:hover {
+      background: #000;
+      transform: scale(1.2);
+    }
+  }
+
+  &__card-next {
+    width: 48px;
+    height: 48px;
+    background: #fff;
+    border-radius: 50%;
+    @include transition;
+
+    & svg {
+      transform: rotate(180deg);
+      display: block;
+      margin: auto;
+
+    }
+
+    &:hover svg path {
+      fill: #fff;
+      @include transition;
+    }
+
+    &:hover {
+      background: #000;
+      transform: scale(1.2);
+    }
+  }
 }
 
 .main__review {
-  padding: 128px 0 160px 0;
+  padding: 128px 0 125px 0;
   background-color: #F2F2F2;
 }

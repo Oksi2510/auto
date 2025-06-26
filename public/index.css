@@ -111,11 +111,10 @@ body {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1310px;
   padding: 0 15px;
   margin: 0 auto;
   height: 100%;
-  overflow: hidden;
 }
 
 .button {
@@ -621,7 +620,7 @@ body {
   transition: all 0.3s;
 }
 .blog__card-link:hover {
-  box-shadow: 0px 20px 20px 0px #dbdbdb;
+  box-shadow: 20px 20px 20px 0px #dbdbdb;
   transform: scale(1.03);
 }
 .blog__card-content {
@@ -662,7 +661,13 @@ body {
   padding: 72px;
   border-radius: 6px;
   border: 1px solid rgba(172, 172, 172, 0.2901960784);
-  margin: 0 24px;
+  margin-right: 24px;
+  width: 616px;
+}
+.review__card-slider {
+  overflow: hidden;
+  width: 1304px;
+  padding-right: -24px;
 }
 .review__card-slider .slick-track {
   display: flex;
@@ -695,9 +700,94 @@ body {
   font-size: 16px;
   line-height: 28px;
 }
+.review__nav-box {
+  align-items: center;
+  position: relative;
+}
+.review__card-arrows {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.review__card-arrow {
+  display: flex;
+  align-items: center;
+}
+.review__card-dots {
+  text-align: center;
+  margin-top: 32px;
+}
+.review__card-dots li {
+  display: inline-block;
+  margin: 0 7.5px;
+}
+.review__card-dots li button {
+  padding: 30px 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+.review__card-dots li button::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #808080;
+  border-radius: 3px;
+  margin: auto;
+}
+.review__card-dots .slick-active button::before {
+  background-color: #FF6433;
+}
+.review__card-prev {
+  position: relative;
+  margin-right: 39px;
+  width: 48px;
+  height: 48px;
+  background: #fff;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+.review__card-prev svg {
+  display: block;
+  display: block;
+  margin: auto;
+}
+.review__card-prev:hover svg path {
+  fill: #fff;
+  transition: all 0.3s;
+}
+.review__card-prev:hover {
+  background: #000;
+  transform: scale(1.2);
+}
+.review__card-next {
+  width: 48px;
+  height: 48px;
+  background: #fff;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+.review__card-next svg {
+  transform: rotate(180deg);
+  display: block;
+  margin: auto;
+}
+.review__card-next:hover svg path {
+  fill: #fff;
+  transition: all 0.3s;
+}
+.review__card-next:hover {
+  background: #000;
+  transform: scale(1.2);
+}
 
 .main__review {
-  padding: 128px 0 160px 0;
+  padding: 128px 0 125px 0;
   background-color: #F2F2F2;
 }
 
