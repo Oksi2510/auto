@@ -46,6 +46,38 @@ body {
   text-align: center;
 }
 
+.form {
+
+
+
+  &__info {
+    width: 480px;
+  }
+
+  &__info-item {
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__info-name {
+    margin-bottom: 2px;
+    font-size: 16px;
+    line-height: 28px;
+    opacity: 0.7;
+  }
+
+  &__link {
+    line-height: 36px;
+    letter-spacing: -0.72px;
+    text-wrap: nowrap;
+  }
+}
+
 // ====================HEADER=============================
 
 .header__top-inner {
@@ -993,16 +1025,12 @@ body {
     margin-bottom: 148px;
   }
 
-  &__info {
-    width: 480px;
-  }
-
   &__input {
     display: block;
     width: 100%;
     background-color: #F2F2F2;
     margin-bottom: 4px;
-    padding: 23px 40px;
+    padding: 26px 40px;
     border-radius: 2px;
 
     &::placeholder {
@@ -1019,33 +1047,108 @@ body {
     }
   }
 
-  &__info-item {
-    margin-bottom: 32px;
 
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  &__info-name {
-    margin-bottom: 2px;
-    font-size: 16px;
-    line-height: 28px;
-    opacity: 0.7;
-  }
-
-  &__link {
-    line-height: 36px;
-    letter-spacing: -0.72px;
-    text-wrap: nowrap;
-
-
-  }
 
   &__button {}
 
   &__map-box {
     margin: 0 auto;
 
+  }
+}
+
+// ====================FOOTER=============================
+.footer {
+
+  &-top {
+    background: #1e1b1bfa;
+  }
+
+  &-top__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 128px 0;
+  }
+
+  &-top__heading {
+    margin-right: 30px;
+  }
+
+
+  &__heading {
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: -1.44px;
+    width: 460px;
+    margin-bottom: 64px;
+  }
+
+  &-top__social {
+    display: flex;
+
+    &-item {
+      margin-right: 24px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+    &-link {}
+  }
+
+  &-top__info {
+    color: #FFF;
+  }
+
+  &-top__info-name {
+    font-size: 18px;
+    line-height: 175%;
+    opacity: 0.6;
+  }
+}
+
+// ====================TOP=============================
+.footer {
+  &-bottom {
+    background-color: #1E1B1B;
+    padding: 65px 0;
+
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__nav-list {
+      color: #fff;
+      display: flex;
+      font-size: 16px;
+      line-height: 28px;
+    }
+
+    &__nav-item {
+      margin-right: 45px;
+
+      & a {
+        @include transition;
+
+        &:hover {
+          color: #FF6433;
+        }
+      }
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+    &__copyright {
+      color: #939191;
+      font-size: 16px;
+      line-height: 28px;
+    }
   }
 }
