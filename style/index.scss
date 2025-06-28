@@ -968,11 +968,12 @@ body {
 
 // ====================CONTACT=============================
 .main__contact-form {
-  padding-top: 120px;
+  padding: 120px 0 168px;
 }
 
 .contact-form {
-
+  background: url("../images/photo/footer.png") bottom left no-repeat;
+  background-size: 100% auto;
 
   &__inner {}
 
@@ -1045,5 +1046,6 @@ body {
 
   &__map-box {
     margin: 0 auto;
+
   }
 }
