@@ -958,13 +958,92 @@ body {
         @include transition;
       }
     }
-
   }
-
-
 }
 
 .main__questions {
   padding: 128px 0;
   background: #E2E6E9;
+}
+
+// ====================CONTACT=============================
+.main__contact-form {
+  padding-top: 120px;
+}
+
+.contact-form {
+
+
+  &__inner {}
+
+  &__heading {
+    margin-bottom: 48px;
+    max-width: 450px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__form {
+    width: 100%;
+    margin-right: 141px;
+    margin-bottom: 148px;
+  }
+
+  &__info {
+    width: 480px;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    background-color: #F2F2F2;
+    margin-bottom: 4px;
+    padding: 23px 40px;
+    border-radius: 2px;
+
+    &::placeholder {
+      color: #1E1B1B;
+      font-family: Manrope;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 28px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__info-item {
+    margin-bottom: 32px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__info-name {
+    margin-bottom: 2px;
+    font-size: 16px;
+    line-height: 28px;
+    opacity: 0.7;
+  }
+
+  &__link {
+    line-height: 36px;
+    letter-spacing: -0.72px;
+    text-wrap: nowrap;
+
+
+  }
+
+  &__button {}
+
+  &__map-box {
+    margin: 0 auto;
+  }
 }
