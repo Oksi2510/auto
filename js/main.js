@@ -54,4 +54,36 @@ $(function () {
       $(this).children(".questions__acc-text").slideDown();
     }
   });
+
+
+  $(".burger").on("click", function (e) {
+    e.preventDefault();
+    if ($(".header__top-inner").hasClass("header__top-inner--open")) {
+      $(".header__top-inner").removeClass("header__top-inner--open");
+    } else {
+      $(".header__top-inner").addClass("header__top-inner--open");
+    }
+
+
+    if ($(".header__top-inner").hasClass("header__top-inner--open")) {
+      $(".overlay").addClass("overlay--show");
+    } else {
+      $(".overlay").removeClass("overlay--show");
+    }
+
+    if ($(".header__top-inner").hasClass("header__top-inner--open")) {
+      $(".burger").addClass("burger--open");
+    } else {
+      $(".burger").removeClass("burger--open");
+    }
+    $(".header__top-inner").on("click", "a", function () {
+      $(".header__top-inner").removeClass("header__top-inner--open");
+      $(".overlay").removeClass("overlay--show");
+    });
+
+    $(".overlay--show").on("click", function () {
+      $(".header__top-inner").removeClass("header__top-inner--open");
+      $(".overlay").removeClass("overlay--show");
+    });
+  });
 });

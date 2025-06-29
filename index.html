@@ -6,13 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.4/jquery.rateyo.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.css" />
-  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
   <link rel="stylesheet" href="public/index.css">
   <title>auto</title>
 </head>
 
 <body>
-  <header class="header">
+  <div class="overlay"></div>
+  <header id="header" class="header">
+    <a href="#" class="burger"><span></span></a>
     <div class="header__top">
       <div class="container">
         <div class="header__top-inner">
@@ -21,11 +22,11 @@
           </a>
           <nav class="header__nav">
             <ul class="header__nav-list">
-              <li class="header__nav-item"><a href="#">Home</a></li>
-              <li class="header__nav-item"><a href="#">About us</a></li>
-              <li class="header__nav-item"><a href="#">Services</a></li>
-              <li class="header__nav-item"><a href="#">Blog</a></li>
-              <li class="header__nav-item"><a href="#">Contact</a></li>
+              <li class="header__nav-item"><a href="#header">Home</a></li>
+              <li class="header__nav-item"><a href="#follow">About us</a></li>
+              <li class="header__nav-item"><a href="#offer">Services</a></li>
+              <li class="header__nav-item"><a href="#blog">Blog</a></li>
+              <li class="header__nav-item"><a href="#contact">Contact</a></li>
             </ul>
           </nav>
           <div class="header__line"></div>
@@ -39,7 +40,7 @@
         <div class="container">
           <div class="header__body-inner">
             <div class="header__content">
-              <h1 class="header__titel">Get your vehicle service done online at one place</h1>
+              <h1 class="header__titel ">Get your vehicle service done online at one place</h1>
               <div class="header__btn-box">
                 <a class="header__btn button" href="#">Book a service</a>
                 <a class="header__btn--transp" data-fancybox href="https://www.youtube.com/watch?v=eMhhl1Wq8JA">Play
@@ -70,7 +71,7 @@
     </div>
   </header>
   <main class="main">
-    <section class=" main__offer offer">
+    <section id="offer" class="main__offer offer">
       <div class="container">
         <div class="offer__inner">
           <div class="offer__heading heading heading--center">
@@ -213,7 +214,7 @@
         </div>
       </div>
     </section>
-    <section class="main__follow follow">
+    <section id="follow" class="main__follow follow">
       <div class="container">
         <div class="follow__inner">
           <div class="follow__inner-info">
@@ -573,7 +574,7 @@
         </div>
       </div>
     </section>
-    <section class="main__blog blog">
+    <section id="blog" class="main__blog blog">
       <div class="container">
         <div class="blog__inner">
           <h2 class="heading__title">Our blog</h2>
@@ -855,7 +856,7 @@
         </div>
       </div>
     </section>
-    <section class="main__contact-form contact-form">
+    <section id="contact" class="main__contact-form contact-form">
       <div class="container">
         <div class="contact-form__inner">
           <h2 class="heading__title contact-form__heading">Get in touch with our experts</h2>
@@ -998,19 +999,19 @@
           <div class="footer-bottom__nav">
             <ul class="footer-bottom__nav-list">
               <li class="footer-bottom__nav-item">
-                <a href="#">Home</a>
+                <a href="#header">Home</a>
               </li>
               <li class="footer-bottom__nav-item">
-                <a href="#">About us</a>
+                <a href="#follow">About us</a>
               </li>
               <li class="footer-bottom__nav-item">
-                <a href="#">Services</a>
+                <a href="#offer">Services</a>
               </li>
               <li class="footer-bottom__nav-item">
-                <a href="#">Blog</a>
+                <a href="#blog">Blog</a>
               </li>
               <li class="footer-bottom__nav-item">
-                <a href="#">Contact us</a>
+                <a href="#contact">Contact us</a>
               </li>
             </ul>
           </div>
